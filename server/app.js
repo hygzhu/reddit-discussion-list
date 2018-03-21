@@ -28,7 +28,7 @@ function lookupMangaDiscussion(req, res, next){
   console.log(query);
 
   //recursively gets the links
-  let next_page = 'https://www.reddit.com/r/manga/search?q='+ query.toLowerCase().replace(/\s/g , "+") +'&sort=top&restrict_sr=on&t=all&limit=100';
+  let next_page = 'https://www.reddit.com/r/manga/search?q='+ query.toLowerCase().replace(/\s/g , "+") +'&sort=new&restrict_sr=on&t=all&limit=100';
   console.log(next_page);
   let link_list = [];
   let past_beginning = false;
